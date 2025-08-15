@@ -5,6 +5,7 @@
 @import 'media.css';
 @import 'news.css';
 @import 'fullscreen.css';
+@import 'tables.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
@@ -22,6 +23,22 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 231, 51);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }
 
 .wrapper {
@@ -267,49 +284,7 @@ body {
   height: 150px;
 }
 
-.points-table__wrapper {
-  box-sizing: border-box;
-}
-.points-table__header {
-  background: #ffe733;
-  display: grid;
-  font-size: 16px;
-  font-weight: 600;
-  grid-template-columns: 8% 25% repeat(8, 1fr);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  border-color: rgb(255, 231, 51);
-  border-top-width: 0;
-  border-bottom-width: 0;
-  box-sizing: border-box;
-}
-.points-table__body {
-  align-items: center;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(0, 0, 0);
-  border-top-width: 0;
-  display: grid;
-  font-size: 16px;
-  font-weight: 500;
-  grid-template-columns: 8% 25% repeat(8, 1fr);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  box-sizing: border-box;
-}
-.points-table__team_block {
-  align-items: center;
-  display: flex;
-  font-size: 17px;
-  font-weight: 700;
-  column-gap: 10px;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-}
+
 .team-logo__small {
   height: 30px;
   width: 30px;

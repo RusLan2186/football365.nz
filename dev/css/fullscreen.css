@@ -1,4 +1,4 @@
-.result__fullsection {
+.fullscreen__section {
   background-image: url('../images/cc0fe0179d961f4518a86aed3b90b49d.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -77,7 +77,7 @@
 }
 
 @media (max-width: 767.98px) {
-  .result__fullsection {
+  .fullscreen__section {
     padding-bottom: 30px;
     padding-top: 30px;
   }
