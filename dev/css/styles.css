@@ -1,5 +1,7 @@
 @import 'normalize.css';
 @import 'header.css';
+@import 'hero.css';
+@import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
 
@@ -104,33 +106,24 @@ body {
 .section {
   margin-bottom: 50px;
 }
-.hero__section {
-  background-image: url('../images/d7da1800558012eff375179e53d04868.jpg');
-  background-size: cover;
-  align-items: center;
-  display: flex;
-  position: relative;
-  height: 70vh;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position-y: left;
+
+.overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 15%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
-.hero__content {
-  align-items: flex-start;
+
+.link__btn_block {
   position: relative;
-  display: flex;
+  display: inline-block;
   z-index: 10;
-  flex-direction: column;
-  width: 50%;
-  row-gap: 15px;
 }
-.hero__title {
-  color: rgb(255, 255, 255);
-  font-size: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+
 .link__btn {
+  display: flex;
+  align-items: center;
   background: #ffe733;
   font-size: 16px;
   font-weight: 600;
@@ -139,25 +132,18 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   height: 40px;
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
-.overlay {
-  background: linear-gradient(
-    0deg,
-    rgba(18, 18, 18, 1) 15%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-.hero__text_block {
+
+.link-btn__text {
+  width: 100%;
+  display: block;
   position: relative;
   z-index: 10;
+  pointer-events: none;
+  text-align: center;
 }
-.link__btn_block {
-  position: relative;
-  display: inline-block;
-  z-index: 10;
-}
+
 .btm-hover__overlay {
   background: linear-gradient(to right, #fff, #fff);
   background-repeat: no-repeat;
@@ -171,16 +157,13 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 5px;
+  text-align: center;
 }
 .btm-hover__overlay:hover {
   background-size: 100% 100%;
   transition: 0.3s all ease;
 }
-.link-btn__text {
-  position: relative;
-  z-index: 10;
-  pointer-events: none;
-}
+
 .subtitle {
   font-size: 18px;
   font-weight: 700;
@@ -1303,8 +1286,14 @@ body {
   body.lock {
     overflow: hidden;
   }
-  
+
   .section {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .link__btn_block {
+    width: 100%;
   }
 }

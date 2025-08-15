@@ -65,4 +65,16 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  initSwiper('.hero__swiper', {
+    effect: 'fade',
+    slidesPerView: 1,
+    speed: 800,
+    grabCursor: true,
+    loop: true,
+    spaceBetween: 0,
+    autoHeight: false,
+    autoplay: { delay: 2000 },
+    fadeEffect: { crossFade: true },
+  });
+
 });
