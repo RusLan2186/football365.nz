@@ -1,0 +1,33 @@
+.lives__section {
+  position: relative;
+  background-image: url('../images/bafef619789e03cd1152f7f396bdb8de.jpg');
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.lives__rows {
+  display: grid;
+  grid-template-columns: 49% 1fr;
+  column-gap: 15px;
+  z-index: 10;
+  position: relative;
+}
+
+.lives__item {
+  background-image: url('../images/60908fc0f2774cb6952c298f26db6c15.webp');
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+}
+.lives__overlay {
+  backdrop-filter: blur(3px);
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.32);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
