@@ -6,6 +6,7 @@
 @import 'news.css';
 @import 'fullscreen.css';
 @import 'tables.css';
+@import 'video.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
@@ -290,20 +291,7 @@ body {
   width: 30px;
   object-fit: contain;
 }
-.video__rows {
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  column-gap: 13px;
-  margin-bottom: 15px;
-}
-.big-video__img_block {
-  padding-bottom: 62%;
-}
-.video-items__block {
-  display: flex;
-  flex-direction: column;
-  row-gap: 11px;
-}
+
 .scores__section {
   position: relative;
   background-image: url('../images/bafef619789e03cd1152f7f396bdb8de.jpg');
