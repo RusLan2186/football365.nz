@@ -4,24 +4,33 @@
   height: 100%;
 }
 
+.custom__swiper {
+  padding-top: 60px;
+}
+
 .swiper.hero__swiper .swiper-slide {
   height: auto;
   min-height: 0;
 }
 
-.swiper__body {
-  /* margin-bottom: 30px; */
+.swiper__body .hero-swiper__body {
+  /* margin-bottom: 0; */
 }
 
-/* .swiper__buttons {
+.swiper__body {
+  margin-bottom: 30px;
+}
+
+.swiper__buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  width: 7.1875rem;
+  column-gap: 30px;
+  width: 120px;
   position: absolute;
-  top: 1.4375rem;
+  top: 25px;
+  left: 0;
   right: 0;
 }
 
@@ -30,43 +39,50 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem; 
-  height: 2.5rem; 
-  background-color: rgb(255, 255, 255);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(255, 231, 51);
+  opacity: 0.8;
   border-radius: 50%;
-  transition: 0.3s background-color;
+  transition: 0.3s opacity;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 1.25rem !important; 
-  color: #24c4fc;
+  font-size: 1.25rem !important;
+  color: #000000;
   font-weight: 700;
   transition: 0.3s color;
   position: relative;
 }
 
 .swiper-button-next::after {
-  right: -0.0625rem; 
+  right: -0.0625rem;
 }
 
 .swiper-button-prev::after {
-  right: 0.0625rem; 
+  right: 0.0625rem;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: #ff2882;
+  opacity: 1;
 }
 
 .swiper-button-next:hover::after,
 .swiper-button-prev:hover::after {
-  color: #ffffff;
-} */
+  color: #000000;
+}
 
 .swiper__pagination {
   display: flex;
   justify-content: center;
+}
+
+.hero-pagination {
+  transform: translateY(-50px);
+  position: relative;
+  z-index: 16;
 }
 
 .swiper__pagination span.swiper-pagination-bullet,
@@ -74,9 +90,30 @@
   width: 0.75rem; /* 12px */
   height: 0.75rem; /* 12px */
   transition: background-color 0.3s;
-    background-color: rgb(255, 231, 51);
+  background-color: rgb(128, 128, 128);
 }
 
 .swiper__pagination span.swiper-pagination-bullet-active {
   background-color: rgb(255, 231, 51);
+}
+
+@media (max-width: 767.98px) {
+  .hero-pagination {
+    transform: translateY(-60px);
+  }
+}
+
+@media (max-width: 599.98px) {
+  .custom__swiper {
+    padding-top: 0px;
+  }
+  .swiper__buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 449.98px) {
+  .hero-pagination {
+    transform: translateY(-40px);
+  }
 }

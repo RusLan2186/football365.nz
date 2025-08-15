@@ -1,0 +1,85 @@
+.matches__section {
+  /* margin-top: -10px; */
+  position: relative;
+  z-index: 10;
+  background-size: cover;
+}
+.matches__rows {
+  column-gap: 15px;
+}
+.match__block {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding-bottom: 25px;
+}
+.match__head {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: #ffe733;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 10;
+  position: relative;
+}
+
+.match__date,
+.match__liga {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+.match__body {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+}
+.match__team_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+}
+.match__team_block:hover {
+  color: rgb(255, 231, 51);
+  transition: 0.3s all ease;
+}
+
+.match__team_logo {
+  height: 50px;
+}
+
+.match__info {
+  color: rgb(255, 231, 51);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.match__link_block {
+  padding: 0 15px;
+}
+
+@media (max-width: 767.98px) {
+  .match__team_block {
+    font-size: 18px;
+  }
+  .match__team_logo {
+    height: 40px;
+  }
+}

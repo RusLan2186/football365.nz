@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import 'header.css';
 @import 'hero.css';
+@import 'matches.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
@@ -172,72 +173,11 @@ body {
   text-transform: uppercase;
   text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
-.matches__section {
-  margin-top: -100px;
-  position: relative;
-  z-index: 10;
-  background-size: cover;
-}
-.matches__rows {
-  column-gap: 15px;
-}
-.match__block {
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  padding-bottom: 25px;
-}
-.match__head {
-  font-size: 18px;
-  font-weight: 600;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  background: #ffe733;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-  z-index: 10;
-  position: relative;
-}
-.match__body {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 25px;
-}
-.match__team_block {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  transition: 0.3s all ease;
-}
-.match__team_block:hover {
-  color: rgb(255, 231, 51);
-  transition: 0.3s all ease;
-}
+
 .team-logo-60 {
   height: 60px;
 }
-.match__info {
-  font-size: 26px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-.match__date {
-  color: rgb(0, 0, 0);
-}
+
 .title__block {
   align-items: center;
   display: flex;
