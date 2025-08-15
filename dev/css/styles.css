@@ -1,24 +1,35 @@
-.wrapper {
+@import 'normalize.css';
+@import 'header.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
+
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden;
-}
-.header {
-  display: flex;
-  align-items: center;
-  height: 60px;
-  background-color: rgb(0, 0, 0);
-  margin-bottom: 50px;
 }
 
-.header__content{
+.main {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 30px;
+  flex-direction: column;
+  flex-grow: 1;
 }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -29,8 +40,10 @@
   background-color: rgb(0, 0, 0);
 }
 .container {
-  max-width: 1440px;
+  max-width: 1470px;
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,41 +57,7 @@
   cursor: pointer;
   text-decoration: none;
 }
-.header__logo_img {
-  height: 80px;
-  width: 80px;
-  object-fit: contain;
-  position: relative;
-  z-index: 10;
-  top: 5px;
-}
-.reset {
-  list-style: none;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.header__nav_list {
-  align-items: center;
-  display: flex;
-  column-gap: 25px;
-}
-.header__nav_link {
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: 0.3s all ease;
-  color: rgb(255, 255, 255);
-}
-.header__nav_link:hover {
-  color: rgb(255, 231, 51);
-  transition: 0.3s all ease;
-}
+
 .grid-col-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1318,4 +1297,14 @@
 }
 .mb-30 {
   margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
 }
