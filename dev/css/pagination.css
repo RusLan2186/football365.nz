@@ -1,0 +1,41 @@
+.pagination__section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  column-gap: 5px;
+  position: relative;
+  z-index: 10;
+}
+
+.pag__item {
+  background-color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  transition: 0.3s all ease;
+  padding: 10px 8px;
+}
+
+.pag__item:hover {
+  background: #ffe733;
+  color: rgb(0, 0, 0);
+  transition: 0.3s all ease;
+}
+.pag-item__active {
+  background: #ffe733;
+  color: rgb(0, 0, 0);
+}
+.pag-item__active:hover {
+  background: #f6d900;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 449.98px) {
+  .pagination__section {
+    margin-top: 20px;
+  }
+  .pag__item {
+    font-size: 16px;
+    padding: 7px 5px;
+  }
+}
