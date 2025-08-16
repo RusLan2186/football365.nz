@@ -12,6 +12,7 @@
 @import 'footer.css';
 @import 'contact.css';
 @import 'post.css';
+@import 'calendar.css';
 @import 'swiper.css';
 @import 'pagination.css';
 
@@ -660,85 +661,11 @@ body {
 .bio__rows {
   column-gap: 30px;
 }
-.calendar__wrapper {
-  text-align: center;
-}
-.calendar__month {
-  display: flex;
-  justify-content: flex-start;
-  column-gap: 5px;
-  margin-bottom: 15px;
-}
-.calendar__checker_img {
-  height: 30px;
-  transition: 0.3s all ease;
-  position: relative;
-  top: 1px;
-}
-.calendar__checker_img:hover {
-  opacity: 0.8;
-  transition: 0.3s all ease;
-  scale: 1.1;
-}
-.calendar__checker_img-right {
-  rotate: 180deg;
-}
-.calendar__head {
-  background-color: rgb(255, 231, 51);
-  display: grid;
-  font-size: 16px;
-  font-weight: 600;
-  grid-template-columns: repeat(7, 1fr);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  text-transform: uppercase;
-}
-.calendar__body {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-.calendar__item {
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(255, 231, 51);
-  border-top-width: 0;
-  border-left-width: 0;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-}
-.calendar__item:first-child {
-  border-left-width: 2px;
-}
-.calendar__date {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-.calendar-item__body {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-.calendar__team_block {
-  font-size: 17px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  text-align: center;
-  align-items: center;
-}
+
 .team-logo-30 {
   height: 30px;
 }
-.calendar__time {
-  font-size: 20px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-}
+
 .link-btn__small {
   height: 30px;
   font-size: 14px;
