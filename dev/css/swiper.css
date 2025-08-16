@@ -4,7 +4,7 @@
   height: 100%;
 }
 
-.custom__swiper {
+.custom__swiper, .clubs__swiper {
   padding-top: 60px;
 }
 
@@ -104,7 +104,7 @@
 }
 
 @media (max-width: 599.98px) {
-  .custom__swiper {
+  .custom__swiper, .clubs__swiper {
     padding-top: 0px;
   }
   .swiper__buttons {

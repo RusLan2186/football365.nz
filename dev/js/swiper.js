@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     autoHeight: false,
     breakpoints: {
       320: { slidesPerView: 1, spaceBetween: 15 },
-      750: { slidesPerView: 2, spaceBetween: 15 },
-      1250: { slidesPerView: 3, spaceBetween: 15 },
+      700: { slidesPerView: 2, spaceBetween: 15 },
+      1100: { slidesPerView: 3, spaceBetween: 15 },
     },
   });
 
