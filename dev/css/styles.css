@@ -299,33 +299,7 @@ body {
   padding-bottom: 20px;
   text-align: center;
 }
-.results__body {
-  display: grid;
-  grid-template-columns: 35% auto 35%;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 25px;
-  z-index: 10;
-  position: relative;
-}
-.results__team_block {
-  align-items: center;
-  display: flex;
-  flex-basis: 30%;
-  font-size: 26px;
-  column-gap: 30px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  justify-content: space-between;
-  position: relative;
-  z-index: 10;
-}
-.team__text_block {
-  position: relative;
-}
+
 .win {
   font-size: 16px;
   font-weight: 600;
@@ -334,12 +308,7 @@ body {
   right: 0;
   bottom: -20px;
 }
-.res__score {
-  font-size: 38px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
+
 
 .teams__rows {
   column-gap: 20px;
@@ -997,5 +966,6 @@ body {
 
   .link__btn_block {
     width: 100%;
+    padding: 0 15px;
   }
 }
