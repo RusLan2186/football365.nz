@@ -10,6 +10,7 @@
 @import 'lives.css';
 @import 'teams.css';
 @import 'footer.css';
+@import 'contact.css';
 @import 'swiper.css';
 @import 'pagination.css';
 
@@ -375,25 +376,7 @@ body {
 .mb-reset {
   margin-bottom: 0;
 }
-.contact__section {
-  text-align: center;
-}
-.contact__content {
-  row-gap: 30px;
-}
-.contact__block {
-  font-size: 17px;
-  font-weight: 500;
-  color: rgb(0, 0, 0);
-  row-gap: 5px;
-  text-transform: capitalize;
-}
-.contact__link {
-  font-size: 18px;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-  text-transform: lowercase;
-}
+
 .reviews__rows {
   column-gap: 20px;
 }
