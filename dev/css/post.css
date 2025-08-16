@@ -12,11 +12,17 @@
 .post__img {
   object-position: 100% 10%;
 }
+
 .post__text_block {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   color: rgb(0, 0, 0);
 }
+
+.post__text_block p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 @media (max-width: 1099.98px) {
   .post__rows {
     grid-template-columns: 65% 1fr;

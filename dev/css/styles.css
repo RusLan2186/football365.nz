@@ -214,7 +214,7 @@ body {
 }
 
 .title {
-  font-size: clamp(26px, 26px + 0.97vw, 45px);
+  font-size: clamp(26px, 1.3vw + 21px, 46px);
   font-weight: 700;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
@@ -774,13 +774,16 @@ body {
 }
 
 @media (max-width: 499.98px) {
+  .title__block {
+    margin-bottom: 20px;
+  }
   .title__icon {
     height: 30px;
     width: 30px;
   }
 
   .subtitle {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .link__btn_block {
