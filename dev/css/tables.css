@@ -80,6 +80,45 @@
   }
 }
 
+/* aside */
+
+.aside__table_head {
+  background: #ffe733;
+  display: grid;
+  font-size: 16px;
+  font-weight: 600;
+  grid-template-columns: 10% 35% repeat(5, 1fr);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aside__table_body {
+  align-items: center;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(0, 0, 0);
+  border-top-width: 0;
+  display: grid;
+  font-size: 16px;
+  font-weight: 500;
+  grid-template-columns: 10% 35% repeat(5, 1fr);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.aside__table_body .points-table__team_block {
+  font-size: 15px;
+}
+
+.aside__table_body .points-table__team_block .team-logo__small {
+  height: 25px;
+  width: 25px;
+}
+
 @media (max-width: 599.98px) {
   .points-table__header,
   .points-table__body {
@@ -106,7 +145,7 @@
     left: 40px;
   }
 
-   .points-table__body > :nth-child(2) {
+  .points-table__body > :nth-child(2) {
     left: 40px;
   }
 }

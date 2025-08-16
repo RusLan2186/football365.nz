@@ -4,21 +4,26 @@
   height: 100%;
 }
 
-.custom__swiper, .clubs__swiper {
+.custom__swiper,
+.clubs__swiper {
   padding-top: 60px;
+}
+
+.swiper__body {
+  margin-bottom: 30px;
 }
 
 .swiper.hero__swiper .swiper-slide {
   height: auto;
   min-height: 0;
 }
-
+.swiper-slide.custom__swiper_slide {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
 .swiper__body .hero-swiper__body {
   /* margin-bottom: 0; */
-}
-
-.swiper__body {
-  margin-bottom: 30px;
 }
 
 .swiper__buttons {
@@ -104,7 +109,8 @@
 }
 
 @media (max-width: 599.98px) {
-  .custom__swiper, .clubs__swiper {
+  .custom__swiper,
+  .clubs__swiper {
     padding-top: 0px;
   }
   .swiper__buttons {

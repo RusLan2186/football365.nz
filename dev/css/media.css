@@ -38,6 +38,8 @@
 }
 
 .media-card__footer {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   background-color: rgb(255, 255, 255);
   padding-bottom: 15px;

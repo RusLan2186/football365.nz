@@ -11,6 +11,7 @@
 @import 'teams.css';
 @import 'footer.css';
 @import 'contact.css';
+@import 'post.css';
 @import 'swiper.css';
 @import 'pagination.css';
 
@@ -315,35 +316,16 @@ body {
   font-size: 26px;
 }
 
-.post__rows {
-  column-gap: 30px;
+.pos-sticky {
+  position: sticky;
+  top: 70px;
+  z-index: 10;
 }
-.post__img_block {
-  padding-bottom: 50%;
-  margin-bottom: 20px;
-}
-.post__img {
-  object-position: 100% 10%;
-}
-.post__text_block {
-  font-size: 17px;
-  font-weight: 500;
-  color: rgb(0, 0, 0);
-}
+
 .aside__section {
   row-gap: 30px;
 }
-.aside__table_head {
-  background: #ffe733;
-  display: grid;
-  font-size: 16px;
-  font-weight: 600;
-  grid-template-columns: 10% 35% repeat(5, 1fr);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  text-align: center;
-  text-transform: uppercase;
-}
+
 .aside__title {
   font-size: 26px;
   font-weight: 700;
@@ -351,21 +333,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.aside__table_body {
-  align-items: center;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(0, 0, 0);
-  border-top-width: 0;
-  display: grid;
-  font-size: 16px;
-  font-weight: 500;
-  grid-template-columns: 10% 35% repeat(5, 1fr);
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
+
 .videos__content {
   row-gap: 10px;
 }

@@ -31,23 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeEffect: { crossFade: true },
   });
 
-  // custom__swiper — может быть несколько
-  initSwiper('.custom__swiper', {
-    slidesPerView: 4,
-    speed: 800,
-    grabCursor: true,
-    loop: true,
-    spaceBetween: 15,
-    autoHeight: false,
-    breakpoints: {
-      320: { slidesPerView: 1, spaceBetween: 15 },
-      600: { slidesPerView: 2, spaceBetween: 15 },
-      900: { slidesPerView: 3, spaceBetween: 15 },
-      1250: { slidesPerView: 4, spaceBetween: 15 },
-    },
-  });
-
-
   // clubs__swiper — может быть несколько
   initSwiper('.clubs__swiper', {
     slidesPerView: 3,
@@ -78,6 +61,21 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+ // custom__swiper — может быть несколько
+  initSwiper('.custom__swiper', {
+    slidesPerView: 4,
+    speed: 800,
+    grabCursor: true,
+    loop: true,
+    spaceBetween: 5,
+    autoHeight: false,
+    breakpoints: {
+      320: { slidesPerView: 1, spaceBetween: 15 },
+      600: { slidesPerView: 2, spaceBetween: 15 },
+      900: { slidesPerView: 3, spaceBetween: 15 },
+      1250: { slidesPerView: 4, spaceBetween: 15 },
+    },
+  });
 
 
 });
