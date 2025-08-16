@@ -9,6 +9,7 @@
 @import 'video.css';
 @import 'lives.css';
 @import 'teams.css';
+@import 'footer.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
@@ -61,10 +62,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
 }
-.footer {
-  padding-top: 40px;
-  background-color: rgb(0, 0, 0);
-}
+
 .container {
   max-width: 1470px;
   width: 100%;
@@ -261,11 +259,7 @@ body {
   transition: 0.3s all ease;
 }
 
-.footer__menu {
-  display: flex;
-  flex-basis: 60%;
-  justify-content: space-between;
-}
+
 
 .overlay__img {
   transition: 0.3s all ease;
@@ -321,39 +315,7 @@ body {
   font-size: 26px;
 }
 
-.footer__content {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 20px;
-  padding-bottom: 30px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(255, 231, 51);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-}
-.footer__logo {
-  height: 120px;
-}
-.footer__item {
-  row-gap: 10px;
-}
-.footer__link {
-  font-size: 16px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
-.footer__btm {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
+
 .post__rows {
   column-gap: 30px;
 }
