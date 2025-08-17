@@ -13,6 +13,7 @@
 @import 'contact.css';
 @import 'post.css';
 @import 'calendar.css';
+@import 'results.css';
 @import 'swiper.css';
 @import 'pagination.css';
 
@@ -297,15 +298,6 @@ body {
   background-color: rgb(0, 0, 0);
   padding-bottom: 20px;
   text-align: center;
-}
-
-.win {
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(255, 231, 51);
-  position: absolute;
-  right: 0;
-  bottom: -20px;
 }
 
 .flx-clmn {
