@@ -24,9 +24,11 @@
   text-transform: lowercase;
 }
 
-@media (max-width: 449.98px){
+@media (max-width: 449.98px) {
+  .contact__content {
+    row-gap: 20px;
+  }
   .contact__title {
-  font-size: 23px;
- 
-}
+    font-size: 23px;
+  }
 }

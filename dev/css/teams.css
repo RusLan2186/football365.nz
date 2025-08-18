@@ -47,6 +47,11 @@
   border-left-width: 0;
   padding-bottom: 20px;
 }
+
+.team-stat__items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 .team-stat__item {
   border-style: solid;
   border-width: 2px;
