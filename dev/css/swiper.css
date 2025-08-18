@@ -5,8 +5,13 @@
 }
 
 .custom__swiper,
-.clubs__swiper {
+.clubs__swiper,
+.cups__swiper {
   padding-top: 60px;
+}
+
+.cups__swiper {
+  display: none;
 }
 
 .swiper__body {
@@ -102,6 +107,12 @@
   background-color: rgb(255, 231, 51);
 }
 
+@media (max-width: 991.98px) {
+  .cups__swiper {
+    display: block;
+  }
+}
+
 @media (max-width: 767.98px) {
   .hero-pagination {
     transform: translateY(-60px);
@@ -110,9 +121,11 @@
 
 @media (max-width: 599.98px) {
   .custom__swiper,
-  .clubs__swiper {
+  .clubs__swiper,
+  .cups__swiper {
     padding-top: 0px;
   }
+  
   .swiper__buttons {
     display: none;
   }

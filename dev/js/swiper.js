@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 800,
     grabCursor: true,
     loop: true,
-    spaceBetween: 5,
+    spaceBetween: 1,
     autoHeight: false,
     breakpoints: {
       320: { slidesPerView: 1, spaceBetween: 15 },
