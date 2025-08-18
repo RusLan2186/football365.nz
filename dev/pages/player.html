@@ -1,113 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>player</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a new page." />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header class="header">
         <div class="container">
-          <div class="flx-btwn"><a class="link-reset header__logo_link" href="https://football365.nz/"><img class="header__logo_img" alt="Logo" src="/images/5ee74aa594530d039f67b2923e3d7f7e.png" /></a>
-            <div class="header__menu">
-              <ul class="reset header__menu_list">
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/news">news</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/post">post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/video-post">video-post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/reviews">reviews</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/stats">stats</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/calendar">calendar</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/results">results</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/video">video</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/lives">lives</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/team">team</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/teams">teams</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/player">player</a></li>
-                <li><a class="link-reset header__menu_link" href="https://football365.nz/contact">contact</a></li>
+          <div class="header__content">
+            <a class="link-reset header__logo_link" href="/"
+              ><img
+                class="header__logo_img"
+                alt="Logo"
+                src="/images/5ee74aa594530d039f67b2923e3d7f7e.png"
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="link-reset header__nav_link" href="/pages/post.html"
+                    >post</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="/pages/news.html"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/stats.html"
+                    >stats</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/calendar.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/results.html"
+                    >results</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/video.html"
+                    >video</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/lives.html"
+                    >lives</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="/pages/team.html"
+                    >team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/teams.html"
+                    >teams</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="player__section section">
+      </header>
+      <main class="main">
+        <section class="player__section section top-section">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/491d6c963800b8703a28556d01de5771.png" />
-              <p class="reset subtitle">player info</p>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/491d6c963800b8703a28556d01de5771.png"
+              />
+              <p class="subtitle">player info</p>
               <h2 class="title">Jaouen Hadjam</h2>
             </div>
             <div class="player__rows">
-              <div class="player__photo_wrapper"><a href="#" class="link-reset player__img_block image-block"><img src="/images/0cdd2c5a9fbf63ff63e638db62fc8c6c.png" class="player__logo" /><span class="player__number_big">02</span></a></div>
+              <div class="player__photo_wrapper">
+                <a href="#" class="link-reset player__img_block image-block"
+                  ><img
+                    src="/images/0cdd2c5a9fbf63ff63e638db62fc8c6c.png"
+                    class="player__logo"
+                  /><span class="player__number_big">02</span></a
+                >
+              </div>
               <div class="player-info">
                 <div class="player__info_wrapper">
                   <div class="player-info__block pdng-20">
                     <div class="player-info__content flx-clmn">
                       <div class="player-info__item">
-                        <p class="reset text-white">position</p>
-                        <p class="reset">defender</p>
+                        <p class="text-white">position</p>
+                        <p>defender</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">number</p>
-                        <p class="reset">2</p>
+                        <p class="text-white">number</p>
+                        <p>2</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">Date of Birth:</p>
-                        <p class="reset">15.02.2000</p>
+                        <p class="text-white">Date of Birth:</p>
+                        <p>15.02.2000</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">age</p>
-                        <p class="reset">26</p>
+                        <p class="text-white">age</p>
+                        <p>26</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">Place of Birth</p>
-                        <p class="reset">paris, france</p>
+                        <p class="text-white">Place of Birth</p>
+                        <p>paris</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">Height</p>
-                        <p class="reset">165cm</p>
+                        <p class="text-white">Height</p>
+                        <p>165cm</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">wight</p>
-                        <p class="reset">67kg</p>
+                        <p class="text-white">wight</p>
+                        <p>67kg</p>
                       </div>
                     </div>
                   </div>
                   <div class="player-info__block pdng-20">
                     <div class="player-info__content flx-clmn">
                       <div class="player-info__item">
-                        <p class="reset text-white">Shooting</p>
-                        <p class="reset">87%</p>
+                        <p class="text-white">Shooting</p>
+                        <p>87%</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">Passing</p>
-                        <p class="reset">91%</p>
+                        <p class="text-white">Passing</p>
+                        <p>91%</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">Defending</p>
-                        <p class="reset">72%</p>
+                        <p class="text-white">Defending</p>
+                        <p>72%</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">Attacking</p>
-                        <p class="reset">41%</p>
+                        <p class="text-white">Attacking</p>
+                        <p>41%</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">Appearances</p>
-                        <p class="reset">27</p>
+                        <p class="text-white">Appearances</p>
+                        <p>27</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">Starts</p>
-                        <p class="reset">14</p>
+                        <p class="text-white">Starts</p>
+                        <p>14</p>
                       </div>
                       <div class="player-info__item">
-                        <p class="reset text-white">Substituted on</p>
-                        <p class="reset">5</p>
+                        <p class="text-white">Substituted on</p>
+                        <p>5</p>
                       </div>
                     </div>
                   </div>
@@ -115,218 +211,687 @@
                 <div class="player-info__items">
                   <ol class="player-circle__item flx-clmn">
                     <div class="circle__block">
-                      <p class="reset text-bold">200</p>
+                      <p class="text-bold">200</p>
                     </div>
-                    <h4 class="reset title-24">games</h4>
+                    <h4 class="circle__block_title">games</h4>
                   </ol>
                   <ol class="player-circle__item flx-clmn">
                     <div class="circle__block">
-                      <p class="reset text-bold">14</p>
+                      <p class="text-bold">14</p>
                     </div>
-                    <h4 class="reset title-24">goals</h4>
+                    <h4 class="circle__block_title">goals</h4>
                   </ol>
                   <ol class="player-circle__item flx-clmn">
                     <div class="circle__block">
-                      <p class="reset text-bold">18</p>
+                      <p class="text-bold">18</p>
                     </div>
-                    <h4 class="reset title-24">goals + pass</h4>
+                    <h4 class="circle__block_title">goals + pass</h4>
                   </ol>
                   <ol class="player-circle__item flx-clmn">
                     <div class="circle__block">
-                      <p class="reset text-bold">5</p>
+                      <p class="text-bold">5</p>
                     </div>
-                    <h4 class="reset title-24">Rewards</h4>
+                    <h4 class="circle__block_title">Rewards</h4>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="bio__section section">
+        </section>
+        <section class="bio__section section">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/491d6c963800b8703a28556d01de5771.png" />
-              <p class="reset subtitle">player info</p>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/491d6c963800b8703a28556d01de5771.png"
+              />
+              <p class="subtitle">player info</p>
               <h2 class="title">biography</h2>
             </div>
-            <div class="bio__rows grid-col-2">
+            <div class="bio__rows">
               <div class="post__text_block">
-                <p>Hadjam&#039;s development has been closely watched by scouts, and he has attracted interest from various clubs looking to bolster their defensive options. Although his career is still in its early stages, he has already made an impression as a highly skilled and versatile left-back who can contribute both defensively and in attack.</p>
-                <p>In addition to his club career, he has represented France at various youth levels, showcasing his potential on the international stage. His performances have earned him a reputation as a talented, up-and-coming defender with strong positional play and a good understanding of the game.</p>
-                <p class="reset">Hadjam development has been closely watched by scouts, and he has attracted interest from various clubs looking to bolster their defensive options. Although his career is still in its early stages, he has already made an impression as a highly skilled and versatile left-back who can contribute both defensively and in attack.</p>
+                <p>
+                  Hadjam's development has been closely watched by scouts, and
+                  he has attracted interest from various clubs looking to
+                  bolster their defensive options. Although his career is still
+                  in its early stages, he has already made an impression as a
+                  highly skilled and versatile left-back who can contribute both
+                  defensively and in attack.
+                </p>
+                <p>
+                  In addition to his club career, he has represented France at
+                  various youth levels, showcasing his potential on the
+                  international stage. His performances have earned him a
+                  reputation as a talented, up-and-coming defender with strong
+                  positional play and a good understanding of the game.
+                </p>
+                <p>
+                  Hadjam development has been closely watched by scouts, and he
+                  has attracted interest from various clubs looking to bolster
+                  their defensive options. Although his career is still in its
+                  early stages, he has already made an impression as a highly
+                  skilled and versatile left-back who can contribute both
+                  defensively and in attack.
+                </p>
+                <p>
+                  This result strengthens Manchester City s grip on the title
+                  race, while Liverpool will have to regroup quickly to keep
+                  their own ambitions alive. The Premier League remains as
+                  unpredictable as ever—who will come out on top in the battle
+                  for glory? . Though the visitors pulled one back late in the
+                  game, any hopes of a miraculous turnaround were quickly
+                  crushed when Madrid netted their fourth goal in stoppage time.
+                  The Catalans, stunned and frustrated, could do little to stop
+                  Madrid’s relentless attack.
+                </p>
               </div>
-              <div class="bio__img_block image-block"><img class="bio__img ibg" src="/images/d0532e038223fa7f6fa91a79fb7aa8bf.jpg" /></div>
+              <div class="bio__img_block image-block">
+                <img
+                  class="bio__img ibg"
+                  src="/images/d0532e038223fa7f6fa91a79fb7aa8bf.jpg"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="player-table__section section">
+        </section>
+        <section class="player-table__section section">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/491d6c963800b8703a28556d01de5771.png" />
-              <p class="reset subtitle">player info</p>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/491d6c963800b8703a28556d01de5771.png"
+              />
+              <p class="subtitle">player info</p>
               <h2 class="title">Statistics</h2>
             </div>
-            <div class="player__table">
-              <div class="player__table_header"><span>year</span><span class="text-left">team</span><span>p</span><span>w</span><span>d</span><span>l</span><span>f</span><span>a</span><span>cd</span><span>pts</span></div>
-              <div class="player__table_body"><span class="text-bold">2023 -24</span><a href="#" class="link-reset points-table__team_block hover-text"><img class="team-logo__small" src="/images/0cdd2c5a9fbf63ff63e638db62fc8c6c.png" /><span>young boys</span></a><span>312</span><span>299</span><span>12</span><span>17</span><span>83</span><span>78</span><span>18</span><span>147</span></div>
-              <div class="player__table_body"><span class="text-bold">2021 -23</span><a href="#" class="link-reset points-table__team_block hover-text"><img class="team-logo__small" src="/images/c41285f0cd42a7750e7eac61084484fe.png" /><span>chelsea</span></a><span>312</span><span>299</span><span>12</span><span>17</span><span>83</span><span>78</span><span>18</span><span>147</span></div>
-              <div class="player__table_body"><span class="text-bold">2019 -21</span><a href="#" class="link-reset points-table__team_block hover-text"><img class="team-logo__small" src="/images/7048cc280707549e1649e845fe1c3103.png" /><span>arsenal</span></a><span>312</span><span>299</span><span>12</span><span>17</span><span>83</span><span>78</span><span>18</span><span>147</span></div>
-              <div class="player__table_body"><span class="text-bold">2017 -19</span><a href="#" class="link-reset points-table__team_block hover-text"><img class="team-logo__small" src="/images/9f01a91fb8263c0e893c95e38562df57.png" /><span>dortmund</span></a><span>312</span><span>299</span><span>12</span><span>17</span><span>83</span><span>78</span><span>18</span><span>147</span></div>
-              <div class="player__table_body"><span class="text-bold">2016 -17</span><a href="#" class="link-reset points-table__team_block hover-text"><img class="team-logo__small" src="/images/87cd68dff1c457eb25f5d6a9a7becb57.png" /><span>bayern</span></a><span>312</span><span>299</span><span>12</span><span>17</span><span>83</span><span>78</span><span>18</span><span>147</span></div>
-              <div class="player__table_body"><span class="text-bold fs-26">all</span><a href="#" class="link-reset points-table__team_block hover-text"><span class="fs-26 text-bold">5</span></a><span class="fs-26">1248</span><span class="fs-26">1123</span><span class="fs-26">154</span><span class="fs-26">165</span><span class="fs-26">247</span><span class="fs-26">398</span><span class="fs-26">272</span><span class="fs-26">753</span></div>
+            <div class="table__wrap player__table">
+              <div class="table__head grid-player-tbl">
+                <span>year</span><span class="text-left">team</span
+                ><span>p</span><span>w</span><span>d</span><span>l</span
+                ><span>f</span><span>a</span><span>cd</span><span>pts</span>
+              </div>
+              <div class="table__body grid-player-tbl">
+                <span class="id86yx6l">2023-PR</span
+                ><a href="#" class="link-reset hover-text table__team_block"
+                  ><img
+                    src="/images/c41285f0cd42a7750e7eac61084484fe.png"
+                    class="team-logo__small"
+                  /><span>chelsea</span></a
+                ><span>198</span><span class="text-green">101</span
+                ><span>38</span><span class="text-red">25</span><span>97</span
+                ><span>43</span><span>35</span><span class="id86yx6l">236</span>
+              </div>
+              <div class="table__body grid-player-tbl">
+                <span class="id86yx6l">2022-23</span
+                ><a href="#" class="link-reset hover-text table__team_block"
+                  ><img
+                    src="/images/549a0182389fbbaff1108380a8d8911e.png"
+                    class="team-logo__small"
+                  /><span>inter</span></a
+                ><span>198</span><span class="text-green">101</span
+                ><span>38</span><span class="text-red">25</span><span>97</span
+                ><span>43</span><span>35</span><span class="id86yx6l">236</span>
+              </div>
+              <div class="table__body grid-player-tbl">
+                <span class="id86yx6l">2020-22</span
+                ><a href="#" class="link-reset hover-text table__team_block"
+                  ><img
+                    src="/images/75a31dc79507ffc704ea253868f91aa0.webp"
+                    class="team-logo__small"
+                  /><span>barca</span></a
+                ><span>198</span><span class="text-green">101</span
+                ><span>38</span><span class="text-red">25</span><span>97</span
+                ><span>43</span><span>35</span><span class="id86yx6l">236</span>
+              </div>
+              <div class="table__body grid-player-tbl">
+                <span class="id86yx6l">2018-20</span
+                ><a href="#" class="link-reset hover-text table__team_block"
+                  ><img
+                    src="/images/87cd68dff1c457eb25f5d6a9a7becb57.png"
+                    class="team-logo__small"
+                  /><span>bayern</span></a
+                ><span>198</span><span class="text-green">101</span
+                ><span>38</span><span class="text-red">25</span><span>97</span
+                ><span>43</span><span>35</span><span class="id86yx6l">236</span>
+              </div>
+              <div class="table__body grid-player-tbl">
+                <span class="id86yx6l">2017-18</span
+                ><a href="#" class="link-reset hover-text table__team_block"
+                  ><img
+                    src="/images/625c73111e3fd4c56c43684acc221bcf.png"
+                    class="team-logo__small"
+                  /><span>man city</span></a
+                ><span>198</span><span class="text-green">101</span
+                ><span>38</span><span class="text-red">25</span><span>97</span
+                ><span>43</span><span>35</span><span class="id86yx6l">236</span>
+              </div>
+              <div class="table__body grid-player-tbl">
+                <span class="id86yx6l">2016-17</span
+                ><a href="#" class="link-reset hover-text table__team_block"
+                  ><img
+                    src="/images/tuluza.png"
+                    class="team-logo__small"
+                  /><span>tuluza</span></a
+                ><span>198</span><span class="text-green">101</span
+                ><span>38</span><span class="text-red">25</span><span>97</span
+                ><span>43</span><span>35</span><span class="id86yx6l">236</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="news__section section">
+        </section>
+        <section class="news__section section">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/491d6c963800b8703a28556d01de5771.png" />
-              <p class="reset subtitle">information</p>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/491d6c963800b8703a28556d01de5771.png"
+              />
+              <p class="subtitle">information</p>
               <h2 class="title">player news</h2>
             </div>
-            <div class="news__cards grid-col-3">
-              <div class="news__column">
-                <div class="media__card"><a href="#" class="link-reset media__img_block image-block"><img class="media__img ibg" src="/images/cb32c487cbda98153a0d3e568dfbac57.jpg" /></a>
-                  <div class="media-card__footer">
-                    <div class="card-footer__head">
-                      <div class="date__label">
-                        <p class="reset">Marth </p>
-                        <p class="reset">12</p>
-                      </div><a href="#" class="link-reset title-19 hover-text">Bayern Munich Extends Bundesliga Winning Streak</a>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="media__card">
+                    <a
+                      href="#"
+                      class="link-reset news-card__image-block image-block"
+                      ><img
+                        class="media__img ibg"
+                        src="/images/cb32c487cbda98153a0d3e568dfbac57.jpg"
+                    /></a>
+                    <div class="media-card__footer">
+                      <div class="card-footer__head">
+                        <div class="date__label">
+                          <p>Marth</p>
+                          <p>12</p>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-reset media__card_title hover-text"
+                          >Bayern Munich Extends Bundesliga Winning Streak</a
+                        >
+                      </div>
+                      <p class="description">
+                        Bayern Munich continued their dominance by winning their
+                        tenth consecutive league match of disappointing
+                        performances
+                      </p>
                     </div>
-                    <p class="reset description">Bayern Munich continued their dominance by winning their tenth consecutive league match of disappointing performances</p>
-                  </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="media__card">
+                    <a
+                      href="#"
+                      class="link-reset news-card__image-block image-block"
+                      ><img
+                        class="media__img ibg"
+                        src="/images/e5fd17d03df643c3d473b75be37a6ad1.jpg"
+                    /></a>
+                    <div class="media-card__footer">
+                      <div class="card-footer__head">
+                        <div class="date__label">
+                          <p>Marth</p>
+                          <p>14</p>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-reset media__card_title hover-text"
+                          >Real Madrid Wins El Clásico with Late Goal in the
+                          match</a
+                        >
+                      </div>
+                      <p class="reset description">
+                        Real Madrid Wins El Clásico with Late Goal in the match.
+                        Every one was a surprising loss in the Champions League.
+                        Incredible event in this wsciting match.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="media__card">
+                    <a
+                      href="#"
+                      class="link-reset news-card__image-block image-block"
+                      ><img
+                        class="media__img ibg"
+                        src="/images/bfc6472824a4f26b1fd71b53dcd6c7ce.jpg"
+                    /></a>
+                    <div class="media-card__footer">
+                      <div class="card-footer__head">
+                        <div class="date__label">
+                          <p>Marth</p>
+                          <p>15</p>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-reset media__card_title hover-text"
+                          >Manchester City Signs Top Striker for Record Fee</a
+                        >
+                      </div>
+                      <p class="description">
+                        Manchester City announced the signing of a star forward
+                        in a record-breaking transfer deal in the title race
+                        after a hard-fought draw at home Lorem ipsum dolor sit
+                        amet consectetur,
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="media__card">
+                    <a
+                      href="#"
+                      class="link-reset news-card__image-block image-block"
+                      ><img
+                        class="media__img ibg"
+                        src="/images/cb32c487cbda98153a0d3e568dfbac57.jpg"
+                    /></a>
+                    <div class="media-card__footer">
+                      <div class="card-footer__head">
+                        <div class="date__label">
+                          <p>Marth</p>
+                          <p>12</p>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-reset media__card_title hover-text"
+                          >Bayern Munich Extends Bundesliga Winning Streak</a
+                        >
+                      </div>
+                      <p class="description">
+                        Bayern Munich continued their dominance by winning their
+                        tenth consecutive league match of disappointing
+                        performances
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="media__card">
+                    <a
+                      href="#"
+                      class="link-reset news-card__image-block image-block"
+                      ><img
+                        class="media__img ibg"
+                        src="/images/cb32c487cbda98153a0d3e568dfbac57.jpg"
+                    /></a>
+                    <div class="media-card__footer">
+                      <div class="card-footer__head">
+                        <div class="date__label">
+                          <p>Marth</p>
+                          <p>12</p>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-reset media__card_title hover-text"
+                          >Bayern Munich Extends Bundesliga Winning Streak</a
+                        >
+                      </div>
+                      <p class="description">
+                        Bayern Munich continued their dominance by winning their
+                        tenth consecutive league match of disappointing
+                        performances
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="media__card">
+                    <a
+                      href="#"
+                      class="link-reset news-card__image-block image-block"
+                      ><img
+                        class="media__img ibg"
+                        src="/images/e5fd17d03df643c3d473b75be37a6ad1.jpg"
+                    /></a>
+                    <div class="media-card__footer">
+                      <div class="card-footer__head">
+                        <div class="date__label">
+                          <p>Marth</p>
+                          <p>14</p>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-reset media__card_title hover-text"
+                          >Real Madrid Wins El Clásico with Late Goal in the
+                          match</a
+                        >
+                      </div>
+                      <p class="reset description">
+                        Real Madrid Wins El Clásico with Late Goal in the match.
+                        Every one was a surprising loss in the Champions League.
+                        Incredible event in this wsciting match.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="media__card">
+                    <a
+                      href="#"
+                      class="link-reset news-card__image-block image-block"
+                      ><img
+                        class="media__img ibg"
+                        src="/images/bfc6472824a4f26b1fd71b53dcd6c7ce.jpg"
+                    /></a>
+                    <div class="media-card__footer">
+                      <div class="card-footer__head">
+                        <div class="date__label">
+                          <p>Marth</p>
+                          <p>15</p>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-reset media__card_title hover-text"
+                          >Manchester City Signs Top Striker for Record Fee</a
+                        >
+                      </div>
+                      <p class="description">
+                        Manchester City announced the signing of a star forward
+                        in a record-breaking transfer deal in the title race
+                        after a hard-fought draw at home Lorem ipsum dolor sit
+                        amet consectetur,
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="media__card">
+                    <a
+                      href="#"
+                      class="link-reset news-card__image-block image-block"
+                      ><img
+                        class="media__img ibg"
+                        src="/images/cb32c487cbda98153a0d3e568dfbac57.jpg"
+                    /></a>
+                    <div class="media-card__footer">
+                      <div class="card-footer__head">
+                        <div class="date__label">
+                          <p>Marth</p>
+                          <p>12</p>
+                        </div>
+                        <a
+                          href="#"
+                          class="link-reset media__card_title hover-text"
+                          >Bayern Munich Extends Bundesliga Winning Streak</a
+                        >
+                      </div>
+                      <p class="description">
+                        Bayern Munich continued their dominance by winning their
+                        tenth consecutive league match of disappointing
+                        performances
+                      </p>
+                    </div>
+                  </article>
                 </div>
               </div>
-              <div class="news__column">
-                <div class="media__card"><a href="#" class="link-reset media__img_block image-block"><img class="media__img ibg" src="/images/e5fd17d03df643c3d473b75be37a6ad1.jpg" /></a>
-                  <div class="media-card__footer">
-                    <div class="card-footer__head">
-                      <div class="date__label">
-                        <p class="reset">Marth </p>
-                        <p class="reset">14</p>
-                      </div><a href="#" class="link-reset title-19 hover-text">Real Madrid Wins El Clásico with Late Goal in the match</a>
-                    </div>
-                    <p class="reset description">Real Madrid Wins El Clásico with Late Goal in the match. Every one was a surprising loss in the Champions League. Incredible event in this wsciting match.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="news__column">
-                <div class="media__card"><a href="#" class="link-reset media__img_block image-block"><img class="media__img ibg" src="/images/bfc6472824a4f26b1fd71b53dcd6c7ce.jpg" /></a>
-                  <div class="media-card__footer">
-                    <div class="card-footer__head">
-                      <div class="date__label">
-                        <p class="reset">Marth </p>
-                        <p class="reset">15</p>
-                      </div><a href="#" class="link-reset title-19 hover-text">Manchester City Signs Top Striker for Record Fee</a>
-                    </div>
-                    <p class="reset description">Manchester City announced the signing of a star forward in a record-breaking transfer deal in the title race after a hard-fought draw at home.</p>
-                  </div>
-                </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="video__section section">
+        </section>
+        <section class="video__section section">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/491d6c963800b8703a28556d01de5771.png" />
-              <p class="reset subtitle">watching</p>
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/491d6c963800b8703a28556d01de5771.png"
+              />
+              <p class="subtitle">watching</p>
               <h2 class="title">player videos</h2>
             </div>
-            <div class="news__cards grid-col-3">
-              <div class="news__column">
-                <div class="media__card"><a href="#" class="link-reset media__img_block image-block"><img class="media__img ibg" src="/images/e5fd17d03df643c3d473b75be37a6ad1.jpg" /><img class="play__icon" src="/images/92ce3a124a9d5e15342c45693551e291.webp" /></a>
-                  <div class="media-card__footer">
-                    <div class="card-footer__head">
-                      <div class="date__label">
-                        <p class="reset">Marth </p>
-                        <p class="reset">12</p>
-                      </div><a href="#" class="link-reset title-19 hover-text">Real Madrid Wins El Clásico with Late Goal in the match</a>
+
+            <div class="swiper clubs__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="link-reset news-item">
+                    <div class="image-block news__img_block">
+                      <img
+                        class="big-news__img ibg"
+                        src="/images/cfc2496a7ed329f14de71cb0dff3cfc7.webp"
+                      /><img
+                        class="play__icon"
+                        src="/images/92ce3a124a9d5e15342c45693551e291.webp"
+                      />
                     </div>
-                    <p class="reset description">Real Madrid Wins El Clásico with Late Goal in the match. Every one was a surprising loss in the Champions League. Incredible event in this wsciting match.</p>
-                  </div>
+                    <div class="overlay__img ibg"></div>
+                    <div class="news__text_block">
+                      <h3 class="reset news__title">sensations in the match</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="link-reset news-item">
+                    <div class="image-block news__img_block">
+                      <img
+                        class="big-news__img ibg"
+                        src="/images/cb32c487cbda98153a0d3e568dfbac57.jpg"
+                      /><img
+                        class="play__icon"
+                        src="/images/92ce3a124a9d5e15342c45693551e291.webp"
+                      />
+                    </div>
+                    <div class="overlay__img ibg"></div>
+                    <div class="news__text_block">
+                      <h3 class="reset news__title">Real Madrid Wins</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="link-reset news-item">
+                    <div class="image-block news__img_block">
+                      <img
+                        class="big-news__img ibg"
+                        src="/images/7ea73405ee2326773be89802ecbc824d.jpg"
+                      /><img
+                        class="play__icon"
+                        src="/images/92ce3a124a9d5e15342c45693551e291.webp"
+                      />
+                    </div>
+                    <div class="overlay__img ibg"></div>
+                    <div class="news__text_block">
+                      <h3 class="reset news__title">the best goals</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="link-reset news-item">
+                    <div class="image-block news__img_block">
+                      <img
+                        class="big-news__img ibg"
+                        src="/images/cfc2496a7ed329f14de71cb0dff3cfc7.webp"
+                      /><img
+                        class="play__icon"
+                        src="/images/92ce3a124a9d5e15342c45693551e291.webp"
+                      />
+                    </div>
+                    <div class="overlay__img ibg"></div>
+                    <div class="news__text_block">
+                      <h3 class="reset news__title">sensations in the match</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="link-reset news-item">
+                    <div class="image-block news__img_block">
+                      <img
+                        class="big-news__img ibg"
+                        src="/images/cb32c487cbda98153a0d3e568dfbac57.jpg"
+                      /><img
+                        class="play__icon"
+                        src="/images/92ce3a124a9d5e15342c45693551e291.webp"
+                      />
+                    </div>
+                    <div class="overlay__img ibg"></div>
+                    <div class="news__text_block">
+                      <h3 class="reset news__title">Real Madrid Wins</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <a href="#" class="link-reset news-item">
+                    <div class="image-block news__img_block">
+                      <img
+                        class="big-news__img ibg"
+                        src="/images/7ea73405ee2326773be89802ecbc824d.jpg"
+                      /><img
+                        class="play__icon"
+                        src="/images/92ce3a124a9d5e15342c45693551e291.webp"
+                      />
+                    </div>
+                    <div class="overlay__img ibg"></div>
+                    <div class="news__text_block">
+                      <h3 class="reset news__title">the best goals</h3>
+                    </div>
+                  </a>
                 </div>
               </div>
-              <div class="news__column">
-                <div class="media__card"><a href="#" class="link-reset media__img_block image-block"><img class="media__img ibg" src="/images/bfc6472824a4f26b1fd71b53dcd6c7ce.jpg" /><img class="play__icon" src="/images/92ce3a124a9d5e15342c45693551e291.webp" /></a>
-                  <div class="media-card__footer">
-                    <div class="card-footer__head">
-                      <div class="date__label">
-                        <p class="reset">Marth </p>
-                        <p class="reset">13</p>
-                      </div><a href="#" class="link-reset title-19 hover-text">Manchester City Signs Top Striker for Record Fee</a>
-                    </div>
-                    <p class="reset description">Manchester City announced the signing of a star forward in a record-breaking transfer deal in the title race after a hard-fought draw at home.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="news__column">
-                <div class="media__card"><a href="#" class="link-reset media__img_block image-block"><img class="media__img ibg" src="/images/cb32c487cbda98153a0d3e568dfbac57.jpg" /><img class="play__icon" src="/images/92ce3a124a9d5e15342c45693551e291.webp" /></a>
-                  <div class="media-card__footer">
-                    <div class="card-footer__head">
-                      <div class="date__label">
-                        <p class="reset">Marth </p>
-                        <p class="reset">14</p>
-                      </div><a href="#" class="link-reset title-19 hover-text">Bayern Munich Extends Bundesliga Winning Streak</a>
-                    </div>
-                    <p class="reset description">Bayern Munich continued their dominance by winning their tenth consecutive league match of disappointing performances</p>
-                  </div>
-                </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="players__section section">
+        </section>
+        <!-- <section class="players__section section">
           <div class="container">
-            <div class="title__block"><img class="title__icon" src="/images/491d6c963800b8703a28556d01de5771.png" />
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/491d6c963800b8703a28556d01de5771.png"
+              />
               <p class="reset subtitle">our team</p>
               <h2 class="title">related players</h2>
             </div>
             <div class="players__rows grid-col-4">
-              <div class="player__column flx-clmn"><a href="#" class="link-reset player__card hover-text">
-                  <div class="player__photo_block image-block"><img class="player__photo ibg" src="/images/da8efa9084d0647b6eb9cf1fdaf068ed.png" /></div>
+              <div class="player__column flx-clmn">
+                <a href="#" class="link-reset player__card hover-text">
+                  <div class="player__photo_block image-block">
+                    <img
+                      class="player__photo ibg"
+                      src="/images/da8efa9084d0647b6eb9cf1fdaf068ed.png"
+                    />
+                  </div>
                   <div class="player__text_block">
                     <h3 class="reset text-bold fs-26">Jaouen Hadjam</h3>
                     <p class="reset player__role">forward</p>
-                  </div><span class="player__number">09</span>
-                </a></div>
-              <div class="player__column flx-clmn"><a href="#" class="link-reset player__card hover-text">
-                  <div class="player__photo_block image-block"><img class="player__photo ibg" src="/images/84775d8a149d034155e74b3db5e3cb2f.png" /></div>
+                  </div>
+                  <span class="player__number">09</span>
+                </a>
+              </div>
+              <div class="player__column flx-clmn">
+                <a href="#" class="link-reset player__card hover-text">
+                  <div class="player__photo_block image-block">
+                    <img
+                      class="player__photo ibg"
+                      src="/images/84775d8a149d034155e74b3db5e3cb2f.png"
+                    />
+                  </div>
                   <div class="player__text_block">
                     <h3 class="reset text-bold fs-26">Abdu Conté</h3>
                     <p class="reset player__role">middle-defender</p>
-                  </div><span class="player__number">08</span>
-                </a></div>
-              <div class="player__column flx-clmn"><a href="#" class="link-reset player__card hover-text">
-                  <div class="player__photo_block image-block"><img class="player__photo ibg" src="/images/c7db9dec7cb0858157475b7ded0a017a.png" /></div>
+                  </div>
+                  <span class="player__number">08</span>
+                </a>
+              </div>
+              <div class="player__column flx-clmn">
+                <a href="#" class="link-reset player__card hover-text">
+                  <div class="player__photo_block image-block">
+                    <img
+                      class="player__photo ibg"
+                      src="/images/c7db9dec7cb0858157475b7ded0a017a.png"
+                    />
+                  </div>
                   <div class="player__text_block">
                     <h3 class="reset text-bold fs-26">Mohamed Ali</h3>
                     <p class="reset player__role">middle-defender</p>
-                  </div><span class="player__number">18</span>
-                </a></div>
-              <div class="player__column flx-clmn"><a href="#" class="link-reset player__card hover-text">
-                  <div class="player__photo_block image-block"><img class="player__photo ibg" src="/images/96133e1e2e728d70b9b80608be68560a.png" /></div>
+                  </div>
+                  <span class="player__number">18</span>
+                </a>
+              </div>
+              <div class="player__column flx-clmn">
+                <a href="#" class="link-reset player__card hover-text">
+                  <div class="player__photo_block image-block">
+                    <img
+                      class="player__photo ibg"
+                      src="/images/96133e1e2e728d70b9b80608be68560a.png"
+                    />
+                  </div>
                   <div class="player__text_block">
                     <h3 class="reset text-bold fs-26">Miguel Chaiwa</h3>
                     <p class="reset player__role">defender</p>
-                  </div><span class="player__number">14</span>
-                </a></div>
+                  </div>
+                  <span class="player__number">14</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section> -->
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__content"><a class="footer__logo_block link-reset" href="#"><img class="footer__logo" src="/images/5ee74aa594530d039f67b2923e3d7f7e.png" /></a>
+          <div class="footer__content">
+            <a class="footer__logo_block link-reset" href="#"
+              ><img
+                class="footer__logo"
+                src="/images/5ee74aa594530d039f67b2923e3d7f7e.png"
+            /></a>
             <div class="footer__menu">
-              <div class="footer__item flx-clmn"><a href="#" class="hover-text link-reset footer__link">news</a><a href="#" class="hover-text link-reset footer__link">about us</a><a href="#" class="hover-text link-reset footer__link">sitemap</a><a href="#" class="hover-text link-reset footer__link">careers</a><a href="#" class="hover-text link-reset footer__link">features</a></div>
-              <div class="footer__item flx-clmn"><a href="#" class="hover-text link-reset footer__link">Upcoming Events</a><a href="#" class="hover-text link-reset footer__link">Live Scores</a><a href="#" class="hover-text link-reset footer__link">Player Profiles</a><a href="#" class="hover-text link-reset footer__link">Teams and Leagues</a><a href="#" class="hover-text link-reset footer__link">Fantasy Sports</a></div>
-              <div class="footer__item flx-clmn"><a href="#" class="hover-text link-reset footer__link">Contact Support</a><a href="#" class="hover-text link-reset footer__link">Help Center</a><a href="#" class="hover-text link-reset footer__link">Account Support</a><a href="#" class="hover-text link-reset footer__link">Membership Support</a><a href="#" class="hover-text link-reset footer__link">Order Status</a></div>
+              <div class="footer__item flx-clmn">
+                <a href="#" class="hover-text link-reset footer__link">news</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >about us</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >sitemap</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >careers</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >features</a
+                >
+              </div>
+              <div class="footer__item flx-clmn">
+                <a href="#" class="hover-text link-reset footer__link"
+                  >Upcoming Events</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Live Scores</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Player Profiles</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Teams and Leagues</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Fantasy Sports</a
+                >
+              </div>
+              <div class="footer__item flx-clmn">
+                <a href="#" class="hover-text link-reset footer__link"
+                  >Contact Support</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Help Center</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Account Support</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Membership Support</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Order Status</a
+                >
+              </div>
             </div>
           </div>
           <div class="footer__btm">
             <p class="reset">Copyright football365. All Rights Reserved 2025</p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/menuBurger.js"></script>
+    <script type="module" src="/js/swiper.js"></script>
   </body>
-
 </html>

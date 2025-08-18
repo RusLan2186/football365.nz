@@ -52,7 +52,7 @@
 .card-footer__head {
   align-items: flex-start;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   column-gap: 15px;
   margin-bottom: 10px;
 }

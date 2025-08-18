@@ -32,7 +32,7 @@
   text-align: center;
   box-sizing: border-box;
 }
-.points-table__team_block {
+.points-table__team_block, .table__team_block {
   align-items: center;
   display: flex;
   font-size: 17px;
