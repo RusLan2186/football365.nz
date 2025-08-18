@@ -14,6 +14,7 @@
 @import 'post.css';
 @import 'calendar.css';
 @import 'results.css';
+@import 'review.css';
 @import 'swiper.css';
 @import 'pagination.css';
 
@@ -338,28 +339,7 @@ body {
   margin-bottom: 0;
 }
 
-.reviews__rows {
-  column-gap: 20px;
-}
-.reviews__column {
-  row-gap: 20px;
-}
-.reviews__block {
-  background-color: rgb(0, 0, 0);
-}
-.reviews__team_block {
-  align-items: center;
-  font-size: 24px;
-  font-weight: 700;
-  flex-basis: 30%;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
-.goals__section {
-  display: grid;
-  column-gap: 50px;
-  grid-template-columns: auto auto;
-}
+
 .brd__btm {
   border-style: solid;
   border-width: 2px;
@@ -374,39 +354,7 @@ body {
   padding-right: 20px;
   padding-top: 20px;
 }
-.goals__block {
-  row-gap: 7px;
-}
-.goals__item {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  font-size: 17px;
-  font-weight: 600;
-  column-gap: 40px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
-.goal__icon {
-  height: 30px;
-}
-.reviews__stat_section {
-  text-align: center;
-  text-transform: uppercase;
-}
-.reviews__stat_content {
-  row-gap: 10px;
-  margin-top: 15px;
-}
-.reviews-stat__item {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 500;
-  column-gap: 10px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
+
 .team__banner_section {
   background-image: url('../images/c2191f1cb385b43991adab84b898f9ac.jpg');
   background-size: cover;
@@ -672,6 +620,13 @@ body {
 }
 .mb-30 {
   margin-bottom: 30px;
+}
+
+@media (max-width: 1199.98px){
+  .aside__title {
+  font-size: 22px;
+
+}
 }
 
 @media (max-width: 767.98px) {
