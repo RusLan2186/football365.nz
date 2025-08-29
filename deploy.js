@@ -11,13 +11,14 @@ const remoteRoot = '/' // корень на сервере
 
 async function deployFTP() {
   const client = new ftp.Client()
+
   client.ftp.verbose = true
   try {
     await client.access({
-      // host: '147.93.73.200',
-      // user: 'u859522989.Ruslan',
-      // password: ':y]NL#vB6^B^EW9K5Sn$uCyCd&Nze7Ig',
-      // secure: false
+      host: '147.93.73.67',
+      user: 'u935866152.Ruslan',
+      password: 'f@PLE4$i$~FnOv^3S:4vJ]xqn>f~Pi@k',
+      secure: false
     })
     console.log('✅ Connected to FTP')
     await uploadDir(localRoot, remoteRoot, client)

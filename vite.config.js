@@ -34,6 +34,23 @@ function getHtmlInputs() {
   return input
 }
 
+// Кастомный плагин для копирования __router.json
+function copyRouterJson() {
+  return {
+    name: 'copy-router-json',
+    generateBundle() {
+      const srcFile = path.resolve(__dirname, 'dev', '__router.json')
+      const outFile = path.resolve(__dirname, 'src', '__router.json')
+      if (fs.existsSync(srcFile)) {
+        fs.copyFileSync(srcFile, outFile)
+        console.log(`✅ __router.json скопирован в ${outFile}`)
+      } else {
+        console.warn('⚠️ __router.json не найден в папке dev')
+      }
+    }
+  }
+}
+
 export default defineConfig(({ command }) => ({
   root: 'dev',
   base: './',
@@ -56,9 +73,9 @@ export default defineConfig(({ command }) => ({
   },
   css: {
     postcss: {
-      plugins: command === 'build' ? [
-        postcssPxToRem({ rootValue: 16, propList: ['*'], replace: true })
-      ] : []
+      plugins: command === 'build'
+        ? [postcssPxToRem({ rootValue: 16, propList: ['*'], replace: true })]
+        : []
     }
   },
   plugins: [
@@ -68,6 +85,7 @@ export default defineConfig(({ command }) => ({
       mozjpeg: { quality: 75 },
       pngquant: { quality: [0.65, 0.9], speed: 4 },
       svgo: { plugins: [{ name: 'removeViewBox', active: false }, { name: 'removeEmptyAttrs', active: false }] }
-    })
+    }),
+    copyRouterJson()
   ]
 }))
